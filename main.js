@@ -116,6 +116,9 @@ const initGame = () => {
     winSound.pause()
     errorSound.pause()
     unknownSound.pause()
+    winSound.currentTime = 0
+    errorSound.currentTime = 0
+    unknownSound.currentTime = 0
     lastClickCount = 0
     mask.innerHTML = ''
     lastClickIsBlue = false
